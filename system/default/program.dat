@@ -5,10 +5,10 @@ api_ip                   = 127.127.127.127
 api_port                 = 80
 clear_dns_cache          = on
 lang                     = auto
-log_max_filesize         = 1
+log_max_filesize         = 10
 projects_search_depth    = 3
 projects_search_path     = {root_dir}\home
-short_project_title      = off
+short_project_title      = on
 task_scheduler           = on
 terminal_ansi_fix        = auto
 update_check             = on
@@ -60,7 +60,7 @@ terminal_codepage        = 65001
 [modules]
 
 allowed_system_env_vars  = allusersprofile appdata commonprogramfiles commonprogramfiles(x86) commonprogramw6432 computername comspec driverdata homedrive homepath localappdata logonserver number_of_processors os path pathext processor_architecture processor_identifier processor_level processor_revision programdata programfiles programfiles(x86) programw6432 psmodulepath public sessionname systemdrive systemroot temp tmp userdomain userdomain_roamingprofile username userprofile windir
-log_max_filesize         = 1
+log_max_filesize         = 10
 log_write_title          = on
 max_probation_fails      = 1
 max_shutdown_time        = 0
