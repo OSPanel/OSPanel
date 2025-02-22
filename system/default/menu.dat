@@ -1,167 +1,167 @@
 ﻿[0]
 
-caption               = {lang_launch_app}
-category              = projects
-command               = wt.exe new-tab -p "Command Prompt" -d "{root_dir}" "%COMSPEC%" /k "osp reset init noprint & osp project {host_decoded} start"
-hr_after              = on
-icon                  = rocket
-need_start_command    = on
-need_use_win_terminal = on
+caption        = {lang_launch_app}
+category       = projects
+command        = wt.exe new-tab -p "Command Prompt" -d "{root_dir}" "%COMSPEC%" /k "osp reset init noprint & osp project {host_decoded} start"
+hr_after       = on
+icon           = rocket
+need_start_cmd = on
+need_use_wt    = off
 
 [1]
 
-caption               = {lang_launch_app}
-category              = projects
-command               = "%COMSPEC%" /k "osp reset init noprint & osp project {host_decoded} start"
-hr_after              = on
-icon                  = rocket
-need_start_command    = on
-need_use_win_terminal = off
+caption        = {lang_launch_app}
+category       = projects
+command        = "%COMSPEC%" /k "osp reset init noprint & osp project {host_decoded} start"
+hr_after       = on
+icon           = rocket
+need_start_cmd = on
+need_use_wt    = off
 
 [2]
 
-caption               = {lang_open_in_browser}
-category              = projects
-command               = "%COMSPEC%" /c "start "" "{project_url}""
-hide                  = on
-icon                  = up-right-from-square
+caption        = {lang_open_in_browser}
+category       = projects
+command        = "%COMSPEC%" /c "start "" "{project_url}""
+hide           = on
+icon           = up-right-from-square
 
 [3]
 
-caption               = {lang_open_in_console}
-category              = projects
-command               = wt.exe new-tab -p "Command Prompt" -d "{root_dir}" "%COMSPEC%" /k "osp reset init noprint & osp project {host_decoded}"
-icon                  = terminal
-need_use_win_terminal = on
+caption        = {lang_open_in_console}
+category       = projects
+command        = wt.exe new-tab -p "Command Prompt" -d "{root_dir}" "%COMSPEC%" /k "osp reset init noprint & osp project {host_decoded}"
+icon           = terminal
+need_use_wt    = off
 
 [4]
 
-caption               = {lang_open_in_console}
-category              = projects
-command               = "%COMSPEC%" /k "osp reset init noprint & osp project {host_decoded}"
-icon                  = terminal
-need_use_win_terminal = off
+caption        = {lang_open_in_console}
+category       = projects
+command        = "%COMSPEC%" /k "osp reset init noprint & osp project {host_decoded}"
+icon           = terminal
+need_use_wt    = off
 
 [5]
 
-caption               = {lang_open_in_explorer}
-category              = projects
-command               = "%SystemRoot%\explorer.exe" "{project_dir}"
-icon                  = folder-closed
-work_directory        = {project_dir}
+caption        = {lang_open_in_explorer}
+category       = projects
+command        = "%SystemRoot%\explorer.exe" "{project_dir}"
+icon           = folder-closed
+work_directory = {project_dir}
 
 [6]
 
-caption               = {lang_launch_shell}
-category              = modules
-command               = wt.exe new-tab -p "Command Prompt" -d "{root_dir}" "%COMSPEC%" /k "osp reset init noprint & osp shell {module_name}"
-icon                  = rocket
-need_state            = on
-need_module_shell     = on
-need_use_win_terminal = on
+caption        = {lang_launch_shell}
+category       = modules
+command        = wt.exe new-tab -p "Command Prompt" -d "{root_dir}" "%COMSPEC%" /k "osp reset init noprint & osp shell {module_name}"
+icon           = rocket
+need_state     = on
+need_shell     = on
+need_use_wt    = off
 
 [7]
 
-caption               = {lang_launch_shell}
-category              = modules
-command               = "%COMSPEC%" /k "osp reset init noprint & osp shell {module_name}"
-icon                  = rocket
-need_state            = on
-need_module_shell     = on
-need_use_win_terminal = off
+caption        = {lang_launch_shell}
+category       = modules
+command        = "%COMSPEC%" /k "osp reset init noprint & osp shell {module_name}"
+icon           = rocket
+need_state     = on
+need_shell     = on
+need_use_wt    = off
 
 [8]
 
-caption               = {lang_open_in_console}
-category              = modules
-command               = wt.exe new-tab -p "Command Prompt" -d "{root_dir}" "%COMSPEC%" /k "osp reset init noprint & osp use {module_name}"
-icon                  = terminal
-need_use_win_terminal = on
+caption        = {lang_open_in_console}
+category       = modules
+command        = wt.exe new-tab -p "Command Prompt" -d "{root_dir}" "%COMSPEC%" /k "osp reset init noprint & osp use {module_name}"
+icon           = terminal
+need_use_wt    = off
 
 [9]
 
-caption               = {lang_open_in_console}
-category              = modules
-command               = "%COMSPEC%" /k "osp reset init noprint & osp use {module_name}"
-icon                  = terminal
-need_use_win_terminal = off
+caption        = {lang_open_in_console}
+category       = modules
+command        = "%COMSPEC%" /k "osp reset init noprint & osp use {module_name}"
+icon           = terminal
+need_use_wt    = off
 
 [10]
 
-caption               = {lang_open_in_explorer}
-category              = modules
-command               = "%SystemRoot%\explorer.exe" "{root_dir}\modules\{module_name}"
-hr_after              = on
-icon                  = folder-closed
-work_directory        = {root_dir}\modules\{module_name}
+caption        = {lang_open_in_explorer}
+category       = modules
+command        = "%SystemRoot%\explorer.exe" "{root_dir}\modules\{module_name}"
+hr_after       = on
+icon           = folder-closed
+work_directory = {root_dir}\modules\{module_name}
 
 [11]
 
-caption               = {lang_initialize}
-category              = modules
-command               = "%COMSPEC%" /c "osp init {module_name}"
-hide                  = on
-icon                  = gears
-need_state            = off
+caption        = {lang_initialize}
+category       = modules
+command        = "%COMSPEC%" /c "osp init {module_name}"
+hide           = on
+icon           = gears
+need_state     = off
 
 [12]
 
-caption               = {lang_switch_on}
-category              = modules
-command               = "%COMSPEC%" /c "osp on {module_name}"
-hide                  = on
-icon                  = toggle-off
-need_state            = off
+caption        = {lang_switch_on}
+category       = modules
+command        = "%COMSPEC%" /c "osp on {module_name}"
+hide           = on
+icon           = toggle-off
+need_state     = off
 
 [13]
 
-caption               = {lang_restart}
-category              = modules
-command               = "%COMSPEC%" /c "osp restart {module_name}"
-hide                  = on
-icon                  = redo
-need_state            = on
+caption        = {lang_restart}
+category       = modules
+command        = "%COMSPEC%" /c "osp restart {module_name}"
+hide           = on
+icon           = redo
+need_state     = on
 
 [14]
 
-caption               = {lang_switch_off}
-category              = modules
-command               = "%COMSPEC%" /c "osp off {module_name}"
-hide                  = on
-icon                  = toggle-on
-need_state            = on
+caption        = {lang_switch_off}
+category       = modules
+command        = "%COMSPEC%" /c "osp off {module_name}"
+hide           = on
+icon           = toggle-on
+need_state     = on
 
 [15]
 
-caption               = {lang_control_panel}
-command               = "%COMSPEC%" /c "start "" "{web_panel_url}""
-enabled               = off
-hide                  = on
-icon                  = tools
+caption        = {lang_control_panel}
+command        = "%COMSPEC%" /c "start "" "{web_panel_url}""
+enabled        = off
+hide           = on
+icon           = tools
 
 [16]
 
-caption               = {lang_cli}
-command               = wt.exe new-tab -p "Command Prompt" -d "{root_dir}" "%COMSPEC%" /k "osp reset init"
-icon                  = terminal
-need_use_win_terminal = on
+caption        = {lang_cli}
+command        = wt.exe new-tab -p "Command Prompt" -d "{root_dir}" "%COMSPEC%" /k "osp reset init"
+icon           = terminal
+need_use_wt    = off
 
 [17]
 
-caption               = {lang_cli}
-command               = "%COMSPEC%" /k "osp reset init"
-icon                  = terminal
-need_use_win_terminal = off
+caption        = {lang_cli}
+command        = "%COMSPEC%" /k "osp reset init"
+icon           = terminal
+need_use_wt    = off
 
 [18]
 
-caption               = {lang_root_dir}
-command               = "%SystemRoot%\explorer.exe" "{root_dir}"
-icon                  = folder-closed
+caption        = {lang_root_dir}
+command        = "%SystemRoot%\explorer.exe" "{root_dir}"
+icon           = folder-closed
 
 [19]
 
-caption               = {lang_idn_menu_caption}
-command               = "{root_dir}\system\bin\idnconverter.exe"
-hr_after              = on
-icon                  = shuffle
+caption        = {lang_idn_menu_caption}
+command        = "{root_dir}\system\bin\idnconverter.exe"
+hr_after       = on
+icon           = shuffle
